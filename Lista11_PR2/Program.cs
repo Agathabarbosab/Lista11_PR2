@@ -71,10 +71,50 @@ namespace Lista11_PR2
         }
         public static void Exercicio3()
         {
+            int[] vete = new int[10];
+            int[] vets = new int[10];
+
+
+            for (int i = 0; i < 10; i++) 
+            {
+                
+                    Console.WriteLine("digite o elemento");
+                    vete[i] = int.Parse(Console.ReadLine());
+
+            }
+
+            for (int i = 0; i < 10; i++)
+            {
+               if ( i % 2 == 0)
+                {
+                    vete[i] = i / 2;
+                }
+
+                else
+                {
+                    vete[i] = i / 3;
+                }
+            }
+
+            Console.WriteLine("Vetor de Entrada");
+            Console.WriteLine("Vetor de Saida ");
+
+
 
         }
         public static void Exercicio4()
         {
+            
+            int[] vet = new int[5000];
+            Random random = new Random();
+            for (int i = 0; i < 5000; i++)
+            {
+                vet[i] = random.Next(1, 5000);
+            }
+            for (int i = 0; i < 5000; i++)
+            {
+                
+            }
 
         }
         static void Main(string[] args)
@@ -87,9 +127,6 @@ namespace Lista11_PR2
                 Console.WriteLine("exercicio 2 - Digite2");
                 Console.WriteLine("exercicio 3 - Digite3");
                 Console.WriteLine("exercicio 4 - Digite4");
-                Console.WriteLine("exercicio 5 _ Digite5");
-                Console.WriteLine("exercicio 6 - Digite6");
-                Console.WriteLine("exercicio 7 - Digite7");
                 Console.WriteLine("Digite 0 - caso queira sair:");
 
                 exercicio = int.Parse(Console.ReadLine());
