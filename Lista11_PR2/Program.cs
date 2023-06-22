@@ -94,10 +94,12 @@ namespace Lista11_PR2
                 {
                     vete[i] = i / 3;
                 }
+                Console.WriteLine(vete[i]+ " ");
+                Console.WriteLine(vets[i]+ " ");
             }
 
-            Console.WriteLine("Vetor de Entrada");
-            Console.WriteLine("Vetor de Saida ");
+          
+
 
 
 
@@ -109,11 +111,16 @@ namespace Lista11_PR2
             Random random = new Random();
             for (int i = 0; i < 5000; i++)
             {
-                vet[i] = random.Next(1, 5000);
+                vet[i] = random.Next(1, 50);
             }
             for (int i = 0; i < 5000; i++)
             {
-                
+                if (vet[i] % 2 != 0 && vet[i] % 3 != 0 && vet[i] % 5 != 0)
+                {
+                    Console.WriteLine("números primos {0}", vet[i]);
+
+                }
+
             }
 
         }
